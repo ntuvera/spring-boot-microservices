@@ -17,7 +17,7 @@ public class Song {
     private String artist;
 
     @Column
-    private Long length;
+    private int length;
 
     public Song() {}
 
@@ -45,11 +45,11 @@ public class Song {
         this.artist = artist;
     }
 
-    public Long getLength() {
+    public int getLength() {
         return length;
     }
 
-    public void setLength(Long length) {
+    public void setLength(int length) {
         this.length = length;
     }
 }
