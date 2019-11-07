@@ -1,0 +1,15 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: spotify-gateway
+
+zuul:
+  routes:
+    containerized-users:
+      path: /users/**
+      serviceId: containerized-users
+    containerized-songs:
+      path: /songs/**
+      serviceId: containerized-songs
