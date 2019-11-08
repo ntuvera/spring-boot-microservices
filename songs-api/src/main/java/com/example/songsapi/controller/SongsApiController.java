@@ -11,7 +11,7 @@ import java.util.Optional;
 @RestController
 public class SongsApiController {
     @Autowired
-    SongServiceImpl songService;
+    private SongServiceImpl songService;
 
     @PostMapping("/")
     public Song createSong(Song newSong){
